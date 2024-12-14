@@ -3,7 +3,7 @@ import File from "../model/file.js";
 export const uploadImage = async (request, response) => {
     const fileObj = {
         path: request.file.path,
-        name: request.file.original
+        name: request.file.originalname
     }
 
     try {
